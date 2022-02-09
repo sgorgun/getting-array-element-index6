@@ -2,19 +2,19 @@
 {
     public static class WhileMethods
     {
-        public static int GetIndexOf(this ushort[] arrayToSearch, ushort value)
+        public static int GetIndexOf(ushort[]? arrayToSearch, ushort value)
         {
             // TODO #3. Analyze the implementation of "GetLastIndexOf(ushort[], ushort)" method to see how "while" loop works, and implement the method using the "while" loop statement.
             throw new NotImplementedException();
         }
 
-        public static int GetIndexOf(this ushort[] arrayToSearch, ushort value, int startIndex, int count)
+        public static int GetIndexOf(ushort[]? arrayToSearch, ushort value, int startIndex, int count)
         {
             // TODO #4. Analyze the implementation of "GetLastIndexOf(ushort[], ushort, int, int)" method to see how "while" loop works, and implement the method using the "while" loop statement.
             throw new NotImplementedException();
         }
 
-        public static int GetLastIndexOf(this ushort[] arrayToSearch, ushort value)
+        public static int GetLastIndexOf(ushort[]? arrayToSearch, ushort value)
         {
             if (arrayToSearch is null)
             {
@@ -35,7 +35,7 @@
             return -1;
         }
 
-        public static int GetLastIndexOf(this ushort[] arrayToSearch, ushort value, int startIndex, int count)
+        public static int GetLastIndexOf(ushort[]? arrayToSearch, ushort value, int startIndex, int count)
         {
             if (arrayToSearch is null)
             {

@@ -2,19 +2,19 @@
 {
     public static class ForMethods
     {
-        public static int GetIndexOf(this uint[] arrayToSearch, uint value)
+        public static int GetIndexOf(uint[]? arrayToSearch, uint value)
         {
             // TODO #1. Analyze the implementation of "GetLastIndexOf(uint[], uint)" method to see how "for" loop works, and implement the method using the "for" loop statement.
             throw new NotImplementedException();
         }
 
-        public static int GetIndexOf(this uint[] arrayToSearch, uint value, int startIndex, int count)
+        public static int GetIndexOf(uint[]? arrayToSearch, uint value, int startIndex, int count)
         {
             // TODO #2. Analyze the implementation of "GetLastIndexOf(uint[], uint, int, int)" method to see how "for" loop works, and implement the method using the "for" loop statement.
             throw new NotImplementedException();
         }
 
-        public static int GetLastIndexOf(this uint[] arrayToSearch, uint value)
+        public static int GetLastIndexOf(uint[]? arrayToSearch, uint value)
         {
             if (arrayToSearch is null)
             {
@@ -32,7 +32,7 @@
             return -1;
         }
 
-        public static int GetLastIndexOf(this uint[] arrayToSearch, uint value, int startIndex, int count)
+        public static int GetLastIndexOf(uint[]? arrayToSearch, uint value, int startIndex, int count)
         {
             if (arrayToSearch is null)
             {

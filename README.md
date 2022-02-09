@@ -1,6 +1,6 @@
 # Getting an Array Element Index
 
-Beginner level task for practicing loops, arrays and extension methods.
+Beginner level task for practicing loops and arrays.
 
 In the task you have to implement six "GetIndexOfChar" methods that should return the zero-based index (position) of the first occurrence of the specified character ("value" parameter) in the string that is passed as a "str" parameter.
 
@@ -28,9 +28,6 @@ Use the _for_, _while_ and _do..while_ statements to repeatedly execute a block 
   * [Increment operator ++](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators#increment-operator-)
   * [Decrement operator --](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators#decrement-operator---)
   * [Creating and Throwing Exceptions](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/exceptions/creating-and-throwing-exceptions)
-* C# Programming Guide
-  * [Extension Methods](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)
-  * [How to implement and call a custom extension method](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method)
 * .NET API
   * [Array.Length](https://docs.microsoft.com/en-us/dotnet/api/system.array.length)
   * [Array.IList.Item](https://docs.microsoft.com/en-us/dotnet/api/system.array.system-collections-ilist-item)
