@@ -4,14 +4,58 @@
     {
         public static int GetIndexOf(uint[]? arrayToSearch, uint value)
         {
-            // TODO #1. Analyze the implementation of "GetLastIndexOf(uint[], uint)" method to see how "for" loop works, and implement the method using the "for" loop statement.
-            throw new NotImplementedException();
+            if (arrayToSearch is null)
+            {
+                throw new ArgumentNullException(nameof(arrayToSearch));
+            }
+
+            for (int i = 0; i < arrayToSearch.Length; i++)
+            {
+                if (arrayToSearch[i] == value)
+                {
+                    return i;
+                }
+            }
+
+            return -1;
         }
 
         public static int GetIndexOf(uint[]? arrayToSearch, uint value, int startIndex, int count)
         {
-            // TODO #2. Analyze the implementation of "GetLastIndexOf(uint[], uint, int, int)" method to see how "for" loop works, and implement the method using the "for" loop statement.
-            throw new NotImplementedException();
+            if (arrayToSearch is null)
+            {
+                throw new ArgumentNullException(nameof(arrayToSearch));
+            }
+
+            if (startIndex < 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(startIndex), "startIndex is less than zero");
+            }
+
+            if (startIndex > arrayToSearch.Length)
+            {
+                throw new ArgumentOutOfRangeException(nameof(startIndex), "startIndex is greater than arrayToSearch.Length");
+            }
+
+            if (count < 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(count), "count is less than zero");
+            }
+
+            if (startIndex + count > arrayToSearch.Length)
+            {
+                throw new ArgumentOutOfRangeException(nameof(count), "startIndex + count > arrayToSearch.Length");
+            }
+
+            for (int i = startIndex; i < startIndex + count; i++)
+            {
+                if (arrayToSearch[i] == value)
+                {
+                    return i;
+                }
+            }
+
+            return -1;
         }
 
         public static int GetLastIndexOf(uint[]? arrayToSearch, uint value)
